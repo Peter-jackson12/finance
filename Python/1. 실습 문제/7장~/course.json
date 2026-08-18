@@ -1,0 +1,8 @@
+{
+    "course_name": "AX Agent Course",
+    "active": true,
+    "details": {
+        "hours": 8,
+        "location": "인천"
+    }
+}
