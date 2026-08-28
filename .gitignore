@@ -1,30 +1,22 @@
-# ====================================================
-# [1] Python 및 가상환경 관련
-# ====================================================
+Set-Content -Path .gitignore -Value @"
+# 가상환경 및 캐시
 __pycache__/
 *.py[cod]
-*$py.class
 .venv/
 env/
 venv/
 .env
 
-# ====================================================
-# [2] 대용량 원천 데이터 및 대용량 가공 파일 무시 (GitHub 100MB 초과 방지)
-# ====================================================
-# 원천 대용량 데이터
+# 대용량 데이터 및 압축파일 전면 무시 (100MB 초과 파일)
+*.zip
+*.tar.gz
 data/한국_금융데이터.csv
 한국_금융데이터.csv
-*.csv.zip
-
-# 가공된 대용량 중간 데이터 (70만 행 전체 파일)
 data/processed/cleaned.csv
 data/processed/eligible_universe.csv
 data/processed/buy_signals.csv
 
-# ====================================================
-# [3] 용량이 작고 리포트에 필요한 핵심 요약 산출물은 Git에 포함 (Allowlist)
-# ====================================================
+# 보고서 및 분석용 경량 요약본은 허용 (Allowlist)
 !data/processed/sector_performance.csv
 !data/processed/daily_sector_returns.csv
 !data/processed/intraday_price_analysis.csv
@@ -33,11 +25,4 @@ data/processed/buy_signals.csv
 !data/processed/summary.json
 !data/processed/charts/*.png
 !data/processed/*.txt
-
-# ====================================================
-# [4] IDE 및 OS 캐시 파일
-# ====================================================
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
+"@ -Encoding utf8

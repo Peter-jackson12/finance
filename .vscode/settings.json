@@ -1,0 +1,9 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^& 'C:/Users/k10k2/AppData/Local/Python/pythoncore-3\\.14-64/python\\.exe' -c \"p=r'data\\\\한국_금융데이터\\.csv'; b=open\\(p,'rb'\\)\\.read\\(300\\); print\\(b\\[:80\\]\\);\nfor e in \\['utf-8-sig','cp949','euc-kr'\\]:\n try: print\\(e,repr\\(b\\.decode\\(e\\)\\.splitlines\\(\\)\\[0\\]\\)\\)\n except Exception as x: print\\(e,type\\(x\\)\\.__name__\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "&": true
+    }
+}
