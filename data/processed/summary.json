@@ -1,0 +1,10 @@
+{
+  "total_rows": 696524,
+  "trading_days": 242,
+  "unique_stocks": 2985,
+  "preferred_count": 28505,
+  "extreme_flt_events": {
+    "원인 불명 이상치 (데이터 수집 노이즈/검토 필요)": 94,
+    "신규상장 첫날 (공모가 60~400% 제한폭 적용)": 55
+  }
+}
